@@ -48,28 +48,30 @@
 
 import { FadeIn } from "./FadeIn";
 import { MyComposition } from "./MyComposition";
-import { BrandLogo } from "./Level1-BrandLogo";
-import { TypographyAnimation } from "./Level2-Typography";
-import { ColorTransitions } from "./Level3-ColorTransitions";
-import { SocialTemplates } from "./Level4-SocialTemplates";
-import { ProductShowcase } from "./Level5-ProductShowcase";
-import { DataVisualization } from "./Level6-DataVisualization";
-import { AdvancedMotionGraphics } from "./Level7-AdvancedMotion";
-import { DynamicContent, dynamicContentSchema } from "./Level8-DynamicContent";
+import { BrandLogo } from "./learn/Level1-BrandLogo";
+import { TypographyAnimation } from "./learn/Level2-Typography";
+import { ColorTransitions } from "./learn/Level3-ColorTransitions";
+import { SocialTemplates } from "./learn/Level4-SocialTemplates";
+import { ProductShowcase } from "./learn/Level5-ProductShowcase";
+import { DataVisualization } from "./learn/Level6-DataVisualization";
+import { AdvancedMotionGraphics } from "./learn/Level7-AdvancedMotion";
+import { DynamicContent, dynamicContentSchema } from "./learn/Level8-DynamicContent";
 import { CloudSyncPro } from "./CloudSyncPro";
+import { S1Composition } from "./practice/s1";
 import { Composition } from "remotion";
 
 export const RemotionRoot = () => {
   return (
     <>
-      <Composition
+      <S1Composition />
+      {/* <Composition
         id="MyComposition"
-        component={CloudSyncPro}
+        component={BrandLogo}
         durationInFrames={1350}
         fps={30}
         width={1920}
         height={1080}
-      />
+      /> */}
       {/* <Composition
         id="MyComposition"
         component={DynamicContent}
